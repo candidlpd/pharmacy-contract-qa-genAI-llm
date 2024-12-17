@@ -39,3 +39,26 @@ contract_qa_project/
 │   └── contract_qa_local.py # Main script for the project
 │
 └── README.md                # Documentation
+
+
+## Git process
+cd H:\Lilly_Projects\contract_qa_project
+
+git init
+git remote add origin https://github.com/candidlpd/contract_qa_project.git
+git remote -v
+git checkout -b feature
+git add .
+git status
+git commit -m "Initial commit: Added Contract QA Project"
+git push -u origin feature
+git pull origin feature --rebase
+git status
+ 
+git rebase --continue
+git push -u origin feature --force
+get-history
+
+
+
+
