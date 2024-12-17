@@ -1,0 +1,11 @@
+openai:
+  api_key: "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"
+  model: "gpt-4"  # Or other suitable model
+
+pinecone:
+  api_key: "pcsk_4ECwoe_HeWcQ4aEkw2cx3Z6mEeeWpFbdvihaQjf6JEKCYaX2wYQq3BKFAphema1XYG7cWa"
+  environment: "eastus2"
+  index_name: contracts-index
+
+data:
+  folder: data/contracts
