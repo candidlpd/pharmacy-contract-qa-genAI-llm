@@ -41,7 +41,7 @@ contract_qa_project/
 └── README.md                # Documentation
 
 
-## Git process
+## Git process very first to push. repo with same folder name should be created in remote and by sittiong on the top of same folder, process below code. 
 cd H:\Lilly_Projects\contract_qa_project
 
 git init
