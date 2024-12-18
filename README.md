@@ -128,7 +128,7 @@ git branch
 ### Ensure you're on the 'feature' branch
 git checkout feature
 
-# Add new files and updates
+### Add new files and updates
 git add src/contract_qa_100PDF.py data/contracts/* README.md
 
 ### Commit changes with a descriptive message
