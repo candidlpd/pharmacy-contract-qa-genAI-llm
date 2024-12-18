@@ -96,24 +96,24 @@ To change the query, update the following line in the script:
 query = "What is the Contract Amount and End Date of Contract 7?"
 
 
-## Git Workflow
+# Git Workflow
 ## Initial Push to Remote Repository
 
-# Navigate to your project directory
+### Navigate to your project directory
 cd H:\Lilly_Projects\contract_qa_project
 
-# Initialize Git and add the remote repository
+### Initialize Git and add the remote repository
 git init
 git remote add origin https://github.com/candidlpd/contract_qa_project.git
 
-# Create and switch to the 'feature' branch
+### Create and switch to the 'feature' branch
 git checkout -b feature
 
-# Stage and commit all files
+### Stage and commit all files
 git add .
 git commit -m "Initial commit: Added Contract QA Project"
 
-# Push to the remote repository
+### Push to the remote repository
 git push -u origin feature
 
 
@@ -121,23 +121,23 @@ git push -u origin feature
 To add and push new files like contract_qa_100PDF.py and updated data:
 
 
-# Check current branch
+### Check current branch
 git status
 git branch
 
-# Ensure you're on the 'feature' branch
+### Ensure you're on the 'feature' branch
 git checkout feature
 
 # Add new files and updates
 git add src/contract_qa_100PDF.py data/contracts/* README.md
 
-# Commit changes with a descriptive message
+### Commit changes with a descriptive message
 git commit -m "Added contract_qa_100PDF.py and updated contract data files"
 
-# Pull and rebase to avoid conflicts
+### Pull and rebase to avoid conflicts
 git pull origin feature --rebase
 
-# Push changes to remote repository
+### Push changes to remote repository
 git push origin feature
 
 
