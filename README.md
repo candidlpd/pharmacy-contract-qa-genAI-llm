@@ -1,41 +1,52 @@
-Contract QA System
-### Highlights
 
-Processes large volumes of PDF contracts using OpenAI embeddings and Pinecone for efficient information retrieval.
-Enables natural language querying of contract data using GPT-4.
-Scales to handle hundreds of PDFs and millions of text chunks.
-### Project Goals
+# **Contract QA System**
 
-PDF Text Extraction: Efficiently extract text data from PDFs.
-Chunking: Break down long texts for embedding generation.
-Embeddings Generation: Convert text chunks to embeddings using OpenAI's API.
-️ Vector Storage: Store embeddings in Pinecone for fast search.
-Natural Language Querying: Utilize GPT-4 for contextual contract data retrieval.
-⚡ Scalability: Handle large datasets seamlessly.
-### Tech Stack
+This repository contains a **Contract QA (Question-Answering) System** designed to process hundreds of PDF contracts, extract critical information, and answer user queries using a natural language model. The system uses **OpenAI embeddings** and stores the data in **Pinecone** for efficient retrieval and querying.
 
-Technology	Purpose
-Python 3.11+	Core Programming Language
-PyPDF2	PDF Text Extraction
-LangChain	LLM Application Framework
-OpenAI GPT-4	Contextual Query Answering
-Pinecone	Vector Database for Embeddings
-Azure	Pinecone Cloud Hosting
+---
 
-Export to Sheets
-### Project Structure
+## **Project Goals**
 
+- **PDF Text Extraction**: Load and process large volumes of PDF contracts to extract text.
+- **Chunking**: Break long contract texts into manageable 500-character chunks.
+- **Embeddings Generation**: Generate text embeddings using OpenAI's API.
+- **Vector Storage**: Store embeddings in Pinecone for efficient querying.
+- **Natural Language Querying**: Use GPT-4 to answer questions contextually about contract details.
+- **Scalability**: Process hundreds of PDFs without performance degradation.
+
+---
+
+## **Tech Stack**
+
+| **Technology**    | **Purpose**                                     |
+|-------------------|-------------------------------------------------|
+| **Python 3.11+**   | Core programming language                      |
+| **PyPDF2**         | Extract and process text data from PDF files   |
+| **LangChain**      | Framework to build LLM-powered workflows       |
+| **OpenAI GPT-4**   | Language model for generating answers          |
+| **Pinecone**       | Vector database for fast storage and retrieval |
+| **Azure**          | Cloud-hosting support for Pinecone services    |
+
+---
+
+## **Project Structure**
+
+```plaintext
 contract_qa_project/
+│
 ├── data/
-│   └── contracts/  # Folder containing PDF contracts
+│   └── contracts/           # Folder containing PDF contract files (100+ PDFs)
+│
 ├── src/
-│   ├── contract_qa_local.py  # Script for local processing and querying
-│   ├── contract_qa_100PDF.py  # Optimized script for 100+ PDFs
-│   └── test.py              # Test script for QA queries
-├── embeddings/  (Optional) Local embeddings directory
-├── models/      (Optional) Pre-trained model files
-├── README.md     # Project documentation
-└── requirements.txt  # Project dependencies
+│   ├── contract_qa_local.py         # Script to process and query contracts
+│   ├── contract_qa_100PDF.py        # Optimized script for 100+ PDFs
+│   └── test.py                      # Testing script for QA queries
+│
+├── embeddings/                      # (Optional) Directory for local embeddings
+├── models/                          # (Optional) Pre-trained model files
+├── README.md                        # Project documentation
+└── requirements.txt                 # Dependencies for the project
+
 ### Workflow Overview
 
 Text Extraction & Chunking
